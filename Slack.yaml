@@ -2,22 +2,22 @@
 # You cannot use color names.
 
 log-view:
-  nickname-format: '(%n) '
+  nickname-format: '%n: '
   scroller-highlight-color: '#f0f'
 input-text:
-  font-family: 'sans-serif'
+  font-family: 'Arial'
   font-size: 13.0
   background-color: '#fff'
   color: '#3D3C40'
   selected:
     background-color: '#ccc'
 member-list:
-  font-family: 'sans-serif'
-  font-size: 13.0
-  color: '#000'
+  font-family: 'Arial'
+  font-size: 14.0
+  color: 'rgb(202,196,201)'
   background-color: '#4d394b'
   operator:
-    color: '#000'
+    color: '#fff'
   selected:
     color: '#fff'
     background:
@@ -27,8 +27,8 @@ member-list:
       top-color: '#4c9689'
       bottom-color: '#4c9689'
 server-tree:
-  font-family: 'Lucida Grande'
-  font-size: 13.0
+  font-family: 'Arial'
+  font-size: 14.0
   background-color: '#4d394b'
   highlight:
     color: '#fff'
@@ -38,9 +38,9 @@ server-tree:
     color: '#fff'
   normal:
     active:
-      color: '#fff'
+      color: 'rgb(202,196,201)'
     inactive:
-      color: '#fff'
+      color: 'rgb(202,196,201)'
   selected:
     active:
       color: '#fff'

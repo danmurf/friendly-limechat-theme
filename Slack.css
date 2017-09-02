@@ -1,11 +1,12 @@
 html {
-  font-family: 'Courier';
-  font-size: 9pt;
-  background-color: white;
-  color: black;
+  font-family: 'Arial';
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
   word-wrap: break-word;
   margin: 0;
-  padding: 3px 4px 10px 4px;
+  padding: 5px 10px 5px 10px;
+  line-height: 1.5;
 }
 
 body { margin: 0; padding: 0; }
@@ -23,7 +24,7 @@ a {}
 .inlineimage {}
 
 /* lines */
-.line { margin: 0 -4px; padding: 0 4px 1px 4px; }
+.line { margin: 5px -4px; padding: 0 4px 0px 4px; }
 .line[alternate=even] {}
 .line[alternate=odd] {}
 .line[type=action] .sender:before {
@@ -37,12 +38,13 @@ a {}
 .url { word-break: break-all; }
 .address { text-decoration: underline; word-break: break-all; }
 .highlight { color: #f0f; font-weight: bold; }
-.time { color: #048; }
+.time { color: #bbb; font-size: 12px; margin-right: 5px; }
 .place { color: #008; }
 
 /* nickname for text messages */
+.sender { font-weight: bold; font-family: 'Arial'; font-size: 14px;}
 .sender[type=myself] { color: #66a; }
-.sender[type=normal] { color: #008; }
+.sender[type=normal] { color: #000; }
 .sender[type=normal][colornumber='0'] {}
 .sender[type=normal][colornumber='1'] {}
 .sender[type=normal][colornumber='2'] {}
@@ -61,27 +63,35 @@ a {}
 .sender[type=normal][colornumber='15'] {}
 
 /* message body */
-.message[type=system] { color: #080; }
-.message[type=error] { color: #f00; font-weight: bold; }
-.message[type=reply] { color: #088; }
-.message[type=error_reply] { color: #f00; }
-.message[type=dcc_send_send] { color: #088; }
-.message[type=dcc_send_receive] { color: #00c; }
+.message {
+  color: #2C2D30;
+  display: block;
+  padding-left: 48px;
+  padding-bottom: 3px;
+  font-family: 'Arial';
+  font-size: 14px;
+}
+.message[type=system] { color: #080; display: inline; padding-left: 0; }
+.message[type=error] { color: #f00; display: inline; padding-left: 0; font-weight: bold; }
+.message[type=reply] { color: #088; display: inline; padding-left: 0; }
+.message[type=error_reply] { color: #f00; display: inline; padding-left: 0; }
+.message[type=dcc_send_send] { color: #088; display: inline; padding-left: 0; }
+.message[type=dcc_send_receive] { color: #00c; display: inline; padding-left: 0; }
 .message[type=privmsg] {}
-.message[type=notice] { color: #888; }
-.message[type=action] { color: #080; }
-.message[type=join] { color: #080; }
-.message[type=part] { color: #080; }
-.message[type=kick] { color: #080; }
-.message[type=quit] { color: #080; }
-.message[type=kill] { color: #080; }
-.message[type=nick] { color: #080; }
-.message[type=mode] { color: #080; }
-.message[type=topic] { color: #080; }
-.message[type=invite] { color: #080; }
-.message[type=wallops] { color: #080; }
-.message[type=debug_send] { color: #aaa; }
-.message[type=debug_receive] { color: #444; }
+.message[type=notice] { color: #888; display: inline; padding-left: 0; }
+.message[type=action] { color: #080; display: inline; padding-left: 0; }
+.message[type=join] { color: #aaa; display: inline; padding-left: 0; }
+.message[type=part] { color: #080; display: inline; padding-left: 0; }
+.message[type=kick] { color: #080; display: inline; padding-left: 0; }
+.message[type=quit] { color: #aaa; display: inline; padding-left: 0; }
+.message[type=kill] { color: #080; display: inline; padding-left: 0; }
+.message[type=nick] { color: #080; display: inline; padding-left: 0; }
+.message[type=mode] { color: #080; display: inline; padding-left: 0; }
+.message[type=topic] { color: #080; display: inline; padding-left: 0; }
+.message[type=invite] { color: #080; display: inline; padding-left: 0; }
+.message[type=wallops] { color: #080; display: inline; padding-left: 0; }
+.message[type=debug_send] { color: #aaa; display: inline; padding-left: 0; }
+.message[type=debug_receive] { color: #444; display: inline; padding-left: 0; }
 
 /* mIRC color effects */
 .effect[color-number='0'] {}
